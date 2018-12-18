@@ -7,6 +7,6 @@ import { expect } from 'chai'
 describe('Greeting.vue', () => {
   it('renders a greeting', () => {
     const wrapperGreetingComponents = mount(Greeting)
-    expect(wrapperGreetingComponents.html().includes('Vue and TDD')).to.be.equal(true)
+    expect(wrapperGreetingComponents.text().includes('Vue and TDD')).to.be.equal(true)
   })
 })
