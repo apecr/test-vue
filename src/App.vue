@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <Greeting/>
+    <SubmitButton msg="Message from App.vue" isAdmin="true"/>
   </div>
 </template>
 
 <script>
 import Greeting from './components/Greeting.vue'
+import SubmitButton from './components/SubmitButton.vue'
 
 export default {
   name: 'app',
   components: {
-    Greeting
+    Greeting,
+    SubmitButton
   }
 }
 </script>
