@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form @submit.prevent="handleSubmit">
+    <form @submit.prevent="handleSubmitAync">
       <input
         data-username
         v-model="username"
@@ -12,7 +12,7 @@
     </form>
     <div
       class="message"
-      v-show="submitted"
+      v-if="submitted"
     >Thank you for your submission, {{ username }}.</div>
   </div>
 </template>
@@ -25,16 +25,13 @@ export default {
     submitted: false
   }),
   methods: {
-    handleSubmit() {
-      this.submitted = true
-    },
-    async handleSubmitAync() {
+    async handleSubmitAync () {
       try {
         const response = await this.$http.get('/api/v1/register')
-        console.log(response)
+        this.submitted = true
         return response
       } catch (error) {
-        console.error(error)
+        this.submitted = false
       }
     }
   }

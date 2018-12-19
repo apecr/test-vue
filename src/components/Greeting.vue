@@ -8,7 +8,7 @@
 export default {
   name: 'Greeting',
 
-  data() {
+  data () {
     return {
       greeting: 'Vue and TDD'
     }

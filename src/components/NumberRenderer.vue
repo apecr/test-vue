@@ -16,7 +16,7 @@ export default {
       isEven === true ? [2, 4, 6, 8].join(', ') : [1, 3, 5, 7, 9].join(', ')
   },
   computed: {
-    numbers() {
+    numbers () {
       return this.getNumbersByKind(this.even)
     }
   }

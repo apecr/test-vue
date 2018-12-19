@@ -7,10 +7,10 @@
     <Greeting />
     <SubmitButton
       msg="Message from App.vue"
-      isAdmin="true"
+      :isAdmin=false
     />
     <FormSubmitter />
-    <NumberRenderer />
+    <NumberRenderer :even="false"></NumberRenderer>
   </div>
 </template>
 
