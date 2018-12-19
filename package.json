@@ -63,6 +63,11 @@
       "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
     ],
     "testURL": "http://localhost/",
-    "setupFiles": ["<rootDir>/tests/jest.init.js"]
+    "setupFiles": [
+      "<rootDir>/tests/jest.init.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,js,vue}"
+    ]
   }
 }

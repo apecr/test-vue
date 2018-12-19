@@ -12,6 +12,7 @@
     <FormSubmitter />
     <NumberRenderer :even=true></NumberRenderer>
     <Bilingual/>
+    <UserContainer/>
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import SubmitButton from './components/SubmitButton.vue'
 import FormSubmitter from './components/FormSubmitter.vue'
 import NumberRenderer from './components/NumberRenderer.vue'
 import Bilingual from './components/Bilingual.vue'
+import UserContainer from './components/UserContainer.vue'
 
 export default {
   name: 'app',
@@ -29,7 +31,8 @@ export default {
     SubmitButton,
     FormSubmitter,
     NumberRenderer,
-    Bilingual
+    Bilingual,
+    UserContainer
   }
 }
 </script>
