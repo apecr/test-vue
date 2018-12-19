@@ -13,6 +13,7 @@
     <NumberRenderer :even=true></NumberRenderer>
     <Bilingual/>
     <UserContainer/>
+    <Parent/>
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import FormSubmitter from './components/FormSubmitter.vue'
 import NumberRenderer from './components/NumberRenderer.vue'
 import Bilingual from './components/Bilingual.vue'
 import UserContainer from './components/UserContainer.vue'
+import Parent from './components/Parent.vue'
 
 export default {
   name: 'app',
@@ -32,7 +34,8 @@ export default {
     FormSubmitter,
     NumberRenderer,
     Bilingual,
-    UserContainer
+    UserContainer,
+    Parent
   }
 }
 </script>
