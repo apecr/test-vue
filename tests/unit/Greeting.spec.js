@@ -1,4 +1,4 @@
-/*global describe, it */
+/* global describe, it */
 
 import { mount, shallowMount } from '@vue/test-utils'
 import Greeting from '@/components/Greeting.vue'

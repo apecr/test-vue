@@ -18,6 +18,6 @@ describe('Emitter', () => {
 
     Emitter.methods.emitEvent.call({ $emit })
 
-    expect(events.myEvent).toEqual(['name', 'password'])
+    expect(events.myEvent).to.be.deep.equal(['name', 'password'])
   })
 })

@@ -10,7 +10,8 @@
       :isAdmin=false
     />
     <FormSubmitter />
-    <NumberRenderer :even="false"></NumberRenderer>
+    <NumberRenderer :even=true></NumberRenderer>
+    <Bilingual/>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import Greeting from './components/Greeting.vue'
 import SubmitButton from './components/SubmitButton.vue'
 import FormSubmitter from './components/FormSubmitter.vue'
 import NumberRenderer from './components/NumberRenderer.vue'
+import Bilingual from './components/Bilingual.vue'
 
 export default {
   name: 'app',
@@ -26,7 +28,8 @@ export default {
     Greeting,
     SubmitButton,
     FormSubmitter,
-    NumberRenderer
+    NumberRenderer,
+    Bilingual
   }
 }
 </script>
