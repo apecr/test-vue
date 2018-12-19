@@ -1,4 +1,3 @@
-
 /*global describe, it */
 
 import NumberRenderer from '@/components/NumberRenderer.vue'

@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "SubmitButton",
+  name: 'SubmitButton',
   props: {
     msg: {
       type: String,
@@ -19,6 +19,5 @@ export default {
       default: false
     }
   }
-};
+}
 </script>
-
