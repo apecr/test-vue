@@ -1,4 +1,4 @@
-/*global describe, it */
+/* global describe, it */
 
 import { shallowMount } from '@vue/test-utils'
 import { expect } from 'chai'
@@ -22,4 +22,3 @@ describe('SubmitButton.vue', () => {
     expect(wrapper.find('button').text()).to.be.equal(msg)
   })
 })
-

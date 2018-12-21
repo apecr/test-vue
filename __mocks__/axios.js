@@ -10,7 +10,8 @@ const axios = {
       resolve(true)
     })
   },
-  setMockError: val => (axios.mockError = val)
+  setMockError: val => (axios.mockError = val),
+  get: (url) => ({ data: { body: 'Hello' } })
 }
 
 module.exports = axios

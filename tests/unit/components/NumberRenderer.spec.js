@@ -1,4 +1,4 @@
-/*global describe, it */
+/* global describe, it */
 
 import NumberRenderer from '@/components/NumberRenderer.vue'
 import { shallowMount } from '@vue/test-utils'
@@ -21,4 +21,3 @@ describe('NumberRenderer', () => {
     // expect(NumberRenderer.computed.numbers.call(localThis)).to.be.equal([1, 3, 5, 7, 9].join(', '))
   })
 })
-
