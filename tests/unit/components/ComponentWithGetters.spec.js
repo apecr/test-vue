@@ -20,4 +20,19 @@ describe('ComponentWithGetters no mocking', () => {
 
     expect(wrapper.find('.fullname').text()).toBe('Alberto Eyo')
   })
+  it('renders a username using a real Vuex getter', () => {
+    const storeMocked = new Vuex.Store({
+      state: {
+        firstName: 'Alise',
+        lastName: 'Doe'
+      },
+
+      getters: {
+        fullname: (state) => state.firstName + ' ' + state.lastName
+      }
+    })
+    const wrapper = shallowMount(ComponentWithGetters, { store: storeMocked, localVue })
+
+    expect(wrapper.find('.fullname').text()).toBe('Alise Doe')
+  })
 })
