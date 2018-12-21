@@ -5,5 +5,7 @@ export default {
 
   poodlesByAge: (state, getters) => (age) => {
     return getters.poodles.filter(dog => dog.age === age)
-  }
+  },
+
+  fullname: (state) => `${state.firstName} ${state.lastName}`
 }

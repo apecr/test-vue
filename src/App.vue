@@ -14,6 +14,7 @@
     <Bilingual/>
     <UserContainer/>
     <Parent/>
+    <ComponentWithGetters/>
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import NumberRenderer from './components/NumberRenderer.vue'
 import Bilingual from './components/Bilingual.vue'
 import UserContainer from './components/UserContainer.vue'
 import Parent from './components/Parent.vue'
+import ComponentWithGetters from './components/ComponentWithGetters.vue'
 
 export default {
   name: 'app',
@@ -35,7 +37,8 @@ export default {
     NumberRenderer,
     Bilingual,
     UserContainer,
-    Parent
+    Parent,
+    ComponentWithGetters
   }
 }
 </script>
