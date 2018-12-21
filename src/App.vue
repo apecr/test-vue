@@ -15,6 +15,7 @@
     <UserContainer/>
     <Parent/>
     <ComponentWithGetters/>
+    <ComponentWithButtons />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import Bilingual from './components/Bilingual.vue'
 import UserContainer from './components/UserContainer.vue'
 import Parent from './components/Parent.vue'
 import ComponentWithGetters from './components/ComponentWithGetters.vue'
+import ComponentWithButtons from './components/ComponentWithButtons.vue'
 
 export default {
   name: 'app',
@@ -38,7 +40,8 @@ export default {
     Bilingual,
     UserContainer,
     Parent,
-    ComponentWithGetters
+    ComponentWithGetters,
+    ComponentWithButtons
   }
 }
 </script>

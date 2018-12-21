@@ -11,5 +11,8 @@ export default {
     } catch (e) {
       throw Error('API Error occurred.')
     }
+  },
+  testAction ({ commit }, { msg }) {
+    commit('MSG', msg)
   }
 }
