@@ -4,11 +4,10 @@ export default {
     state.posts = { ...state.posts, [post.id]: post }
   },
   MSG (state, msg) {
-    console.log(msg)
     state.msgs ? state.msgs.push(msg) : state.msgs = [msg]
     state.arrMsgs = { ...state.arrMsgs, [msg.id]: msg }
   },
   testMutation (state, msg) {
-    console.log(msg)
+    state.msgsMutated ? state.msgsMutated.push(msg) : state.msgsMutated = [msg]
   }
 }
