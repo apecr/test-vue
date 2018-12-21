@@ -28,11 +28,36 @@ describe('ComponentWithGetters no mocking', () => {
       },
 
       getters: {
-        fullname: (state) => state.firstName + ' ' + state.lastName
+        fullname: (state) => state.firstName + ' ' + state.lastName,
+        poodles: (state) => [{}]
       }
     })
     const wrapper = shallowMount(ComponentWithGetters, { store: storeMocked, localVue })
 
     expect(wrapper.find('.fullname').text()).toBe('Alise Doe')
+  })
+  it('rrenders a username using computed mounting options. Mocking getters', () => {
+    const wrapper = shallowMount(ComponentWithGetters, {
+      mocks: {
+        $store: {
+          getters: {
+            fullname: 'John Doe',
+            poodles: [{}]
+          }
+        }
+      }
+    })
+
+    expect(wrapper.find('.fullname').text()).toBe('John Doe')
+  })
+  it('renders a username using computed mounting options. Mocking computed', () => {
+    const wrapper = shallowMount(ComponentWithGetters, {
+      computed: {
+        fullname: () => 'Alice Doe',
+        poodles: () => [{}]
+      }
+    })
+
+    expect(wrapper.find('.fullname').text()).toBe('Alice Doe')
   })
 })

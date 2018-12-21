@@ -11,15 +11,14 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'ComponentWithGetters',
   computed: {
-    fullname () {
-      return this.$store.getters.fullname
-    },
-    poodles () {
-      return this.$store.getters.poodles
-    }
+    ...mapGetters([
+      'fullname', 'poodles'
+    ])
   }
 }
 </script>
