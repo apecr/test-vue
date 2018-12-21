@@ -21,4 +21,15 @@ describe('ComponentWithVuex', () => {
 
     expect(wrapper.find('.username').text()).toBe('alice')
   })
+  it('renders a username using a mock store', () => {
+    const wrapper = shallowMount(ComponentWithVuex, {
+      mocks: {
+        $store: {
+          state: { username: 'Alice' }
+        }
+      }
+    })
+
+    expect(wrapper.find('.username').text()).toBe('Alice')
+  })
 })
